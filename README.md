@@ -1,5 +1,5 @@
 
-![Alt Text](/gif/Screen%20Recording%202024-09-30%20at%205.22.46 PM.gif)
+![Alt Text](/gif/flow.gif)
 
 
 
