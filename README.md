@@ -1,3 +1,8 @@
+
+![Alt Text](/gif/Screen%20Recording%202024-09-30%20at%205.22.46 PM.gif)
+
+
+
 # Next.js TypeScript Project with Apollo Client and Chakra UI
 
 This project is a Next.js application built with TypeScript that utilizes Apollo Client for GraphQL data fetching and Chakra UI for responsive design. The application features a modal for user input and displays a paginated list of characters fetched from a public GraphQL API.
