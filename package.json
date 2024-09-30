@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test:e2e": "playwright test",
-    "test": "jest"
+    "test": "jest",
+    "e2e": "playwright test"
+
   },
   "dependencies": {
     "@apollo/client": "^3.11.8",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
+    "@playwright/test": "^1.47.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
