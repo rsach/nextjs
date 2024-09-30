@@ -34,7 +34,7 @@ This project is a Next.js application built with TypeScript that utilizes Apollo
     ```bash 
     npm run dev
 
-4. Open your browser and navigate to [link]http://localhost:3000.
+4. Open your browser and navigate to http://localhost:3000.
 
 ### Usage
 1. User Input: Upon visiting the page, a modal will appear, prompting the user to enter their username and job title. This information will be stored for future sessions.
