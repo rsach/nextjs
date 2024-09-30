@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import ModalItem from './itemsdetailsmodal';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { Character, QueryResponse } from '@/modal/character';
 
 export const GET_CHARACTERS = gql`
   query GetCharacters($page: Int!) {
@@ -26,7 +27,7 @@ const InfoPage = () => {
   const router = useRouter();
   const { page } = router.query; // Read the page from the URL
   const [currentPage, setCurrentPage] = useState<number>(Number(page) || 1);
-  const [selectedCharacter, setSelectedCharacter] = useState<any>(null);
+  const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
 
   // Update the current page based on the router query param
   useEffect(() => {
@@ -53,7 +54,7 @@ const InfoPage = () => {
     </Alert>
   );
 
-  const { results, info } = data.characters;
+  const { results, info } = (data.characters as QueryResponse);
 
   return (
     <Box p="10px" mt="20px">
@@ -62,7 +63,7 @@ const InfoPage = () => {
 
       {/* Character Grid */}
       <Grid templateColumns="repeat(3, 1fr)" gap={6}>
-        {results.map((character: any) => (
+        {results.map((character: Character) => (
           <Box
             key={character.id}
             onClick={() => setSelectedCharacter(character)}

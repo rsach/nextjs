@@ -1,9 +1,10 @@
 // components/ModalItem.tsx
+import { Character } from '@/modal/character';
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 
 interface ModalItemProps {
-  character: any
+  character: Character
   onClose: () => void
 }
 
